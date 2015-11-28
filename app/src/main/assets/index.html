@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <pre id="rooms"></pre>
+    <pre id="guests"></pre>
+    <pre id="weapons"></pre>
+    <br />
+    <form id="nameForm">
+        Name:
+        <input id="userName" type="text" value="Your Name Here" onclick="this.value=''" />
+        <input id="welcomeButton" type="submit" value="Enter" onclick="welcomeName('nameForm', 'userName');" />
+    </form>
+    <pre id="cardsHeld"></pre>
+    <form>
+        <br />
+        <label>Guess Room: </label>
+        <select id="RoomSelect"></select>
+        <br />
+        <label>Guess Suspect: </label>
+        <select id="SuspectSelect"></select>
+        <br />
+        <label>Guess Weapon: </label>
+        <select id="WeaponSelect"></select>
+        <br />
+        <input id="GuessButton" type="button" disabled="true" value="Guess" onclick="clearOutput(); guessSecret();" />
+    </form>
+    <p id="GameOutput"></p>
+
+    <input id="HistoryToggle" type="button" value="Show History" onclick="toggleHistory();" />
+    <pre id="history" style="display: none;"></pre>
+    
+    <script src="functions/gameData.js"></script>
+    <script src="functions/document.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

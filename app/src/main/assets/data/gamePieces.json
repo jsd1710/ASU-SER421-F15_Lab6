@@ -1,0 +1,23 @@
+﻿{
+  "Rooms": [
+    "Kitchen",
+    "Study",
+    "Living Room",
+    "Dining Room",
+    "Library"
+  ],
+  "Guests": [
+    "Mrs. Peacock",
+    "Mrs. Green",
+    "Miss Scarlet",
+    "Colonel Mustard",
+    "Professor Plum"
+  ],
+  "Weapons": [
+    "Pistol",
+    "Knife",
+    "Wrench",
+    "Lead Pipe",
+    "Candlestick"
+  ]
+}
